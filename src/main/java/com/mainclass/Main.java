@@ -1,9 +1,8 @@
 package com.mainclass;
 
+import com.entity.Sim;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import com.entity.Jio;
-import com.entity.Airtel;
 import com.entity.Person;
 
 public class Main {
@@ -11,6 +10,5 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(config.class);
         Person p = context.getBean(Person.class);
         System.out.println(p.makeCall());
-
     }
 }
